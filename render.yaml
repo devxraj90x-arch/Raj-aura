@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: aura-ffx-admin-site
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: ADMIN_IDS
+        sync: false
+      - key: DB_PATH
+        value: /var/www/html/database.db
